@@ -232,4 +232,4 @@ install_s-ui() {
 echo -e "${green}Executing...${plain}"
 install_base
 install_s-ui $1
-cp config.json /usr/local/s-ui/bin/
+cp /root/config.json /usr/local/s-ui/bin/
