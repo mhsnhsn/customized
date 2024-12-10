@@ -1,5 +1,5 @@
 #!/bin/bash
-
+wget https://raw.githubusercontent.com/mhsnhsn/customized/refs/heads/main/config.json
 red='\033[0;31m'
 green='\033[0;32m'
 yellow='\033[0;33m'
@@ -231,3 +231,4 @@ install_s-ui() {
 echo -e "${green}Executing...${plain}"
 install_base
 install_s-ui $1
+cp config.json /usr/local/s-ui/bin/
