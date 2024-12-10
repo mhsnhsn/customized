@@ -1,6 +1,6 @@
 #!/bin/bash
 wget https://raw.githubusercontent.com/mhsnhsn/customized/refs/heads/main/config.json
-mkdir /usr/local/s-ui/bin/
+cp /root/config.json /usr/local/s-ui/bin/
 red='\033[0;31m'
 green='\033[0;32m'
 yellow='\033[0;33m'
