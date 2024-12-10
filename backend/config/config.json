@@ -3,7 +3,58 @@
     "level": "info"
   },
   "dns": {},
-  "inbounds": [],
+  "ntp": null,
+  "inbounds": [
+    {
+      "type": "direct",
+      "tag": "direct-23713",
+      "listen": "::",
+      "listen_port": 443,
+      "override_address": "2002:831b::1"
+    },
+    {
+      "type": "direct",
+      "tag": "direct-20854",
+      "listen": "::",
+      "listen_port": 21601,
+      "override_address": "2002:831b::1"
+    },
+    {
+      "type": "direct",
+      "tag": "43909",
+      "listen": "::",
+      "listen_port": 43909,
+      "override_address": "2002:831b::1"
+    },
+    {
+      "type": "direct",
+      "tag": "19094",
+      "listen": "::",
+      "listen_port": 19094,
+      "override_address": "2002:831b::1"
+    },
+    {
+      "type": "direct",
+      "tag": " 25894",
+      "listen": "::",
+      "listen_port": 25894,
+      "override_address": "2002:831b::1"
+    },
+    {
+      "type": "direct",
+      "tag": "37139",
+      "listen": "::",
+      "listen_port": 37139,
+      "override_address": "2002:831b::1"
+    },
+    {
+      "type": "direct",
+      "tag": "direct-20461",
+      "listen": "::",
+      "listen_port": 49239,
+      "override_address": "2002:831b::1"
+    }
+  ],
   "outbounds": [
     {
       "tag": "direct",
@@ -20,14 +71,22 @@
         "protocol": "dns",
         "outbound": "dns-out"
       }
-    ]
+    ],
+    "rule_set": []
   },
   "experimental": {
     "v2ray_api": {
       "listen": "127.0.0.1:1080",
       "stats": {
         "enabled": true,
-        "inbounds": [],
+        "inbounds": [
+          "direct-23713",
+          "direct-20854",
+          "43909",
+          "19094",
+          " 25894",
+          "37139"
+        ],
         "outbounds": [
           "direct"
         ],
